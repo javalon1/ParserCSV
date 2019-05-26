@@ -14,8 +14,19 @@ public class App
     {
         try{
             List<String> lines = Files.readAllLines(file);
-            System.out.println(lines);
-        }
+
+            System.out.println(lines.get(1));
+
+            String[] l = lines.get(1).split(",");
+            System.out.println(l[2]);
+
+
+            //            System.out.println(lines);
+
+/*            for(String line: lines){
+                System.out.println(line);
+            }
+  */      }
         catch (IOException e){
             e.printStackTrace();
         }
